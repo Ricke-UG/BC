@@ -7,7 +7,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
             action(CreateSalesOrder)
             {
                 ApplicationArea = All;
-                Caption = 'Create Sales Order';
+                Caption = 'Create Sales Order 123 test test';
                 Image = Order;
                 Promoted = true;
                 PromotedCategory = Process;
