@@ -1,11 +1,28 @@
 {
   "folders": [
     {
-      "path": "app"
+      "path": ".AL-Go"
     },
     {
-      "path": ".AL-Go"
+      "path": "Tools"
+    },
+    {
+      "path": ".github"
     }
   ],
-  "settings": {}
+  "settings": {
+     "al.codeAnalyzers": [
+      "${CodeCop}",
+      "${UICop}",
+      "${PerTenantExtensionCop}"
+    ],
+    "al.enableCodeAnalysis": true,
+    "al.enableCodeActions": true,
+    "al.downloadSymbols": true,
+        "powershell.cwd": "c:\\Development\\Projects\\coffee-perfect\\BC-CP-Master\\Tools",
+    "al-test-runner.sendDebugTelemetry": false,
+    "al.showHomeAtStartup": "WhenUpdated",
+	"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectType>.al",
+	"CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al"
+  }
 }

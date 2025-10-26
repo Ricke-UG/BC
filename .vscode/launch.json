@@ -1,0 +1,21 @@
+{
+    "version":  "0.2.0",
+    "configurations":  [
+        {
+            "name": "Sandbox",
+            "type": "al",
+            "request": "launch",
+            "server": "https://businesscentral.dynamics.com/",
+            "serverInstance": "BC",
+            "environmentName": "Test",
+            "environmentType": "Sandbox",
+            "port": 7049,
+            "authentication": "MicrosoftEntraID",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "schemaUpdateMode": "ForceSync"
+        }
+    ]
+}
