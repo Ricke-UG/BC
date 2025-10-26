@@ -53,7 +53,7 @@ page 50001 "Object Card"
                 field("Building Entrances"; Rec."Building Entrances")
                 {
                 }
-                field("Residential Units"; Rec."Residential Units")
+                field("Units"; Rec."Units")
                 {
                 }
             }

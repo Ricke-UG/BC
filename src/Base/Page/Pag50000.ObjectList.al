@@ -58,10 +58,26 @@ page 50000 "Object List"
                 {
                     ToolTip = 'Specifies the value of the Building Entrances field.', Comment = '%';
                 }
-                field("Residential Units"; Rec."Residential Units")
+                field("Units"; Rec."Units")
                 {
-                    ToolTip = 'Specifies the value of the Residential Units field.', Comment = '%';
+
                 }
+            }
+        }
+    }
+    actions
+    {
+        area(navigation)
+        {
+            action(Building)
+            {
+                ApplicationArea = All;
+                Caption = 'Buildings';
+                Image = Company;
+                RunObject = Page "Object Building List";
+                RunPageLink = "Object No." = field("No.");
+                ShortCutKey = 'Alt+B';
+                ToolTip = 'View or edit Buildings.';
             }
         }
     }

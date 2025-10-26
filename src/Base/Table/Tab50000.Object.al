@@ -14,7 +14,7 @@ table 50000 Object
         {
             Caption = 'No.';
         }
-        field(4; Description; Text[100])
+        field(4; Description; Text[50])
         {
             Caption = 'Description';
         }
@@ -99,21 +99,27 @@ table 50000 Object
         }
         field(1000; Buildings; Integer)
         {
-            ToolTip = 'his field shows you how many buildings the Object has.';
+            ToolTip = 'This field shows you how many buildings the Object has.';
             Caption = 'Buildings';
             FieldClass = FlowField;
+            CalcFormula = count("Object Building" where("Object No." = field("No.")));
+            Editable = false;
         }
         field(1001; "Building Entrances"; Integer)
         {
             ToolTip = 'This field shows you how many entrances the building has.';
             Caption = 'Building Entrances';
             FieldClass = FlowField;
+            CalcFormula = count("Object Building Entrance" where("Object No." = field("No.")));
+            Editable = false;
         }
-        field(1002; "Residential Units"; Integer)
+        field(1003; "Units"; Integer)
         {
-            ToolTip = 'This field shows you how many Residential Units the building has.';
-            Caption = 'Residential Units';
+            ToolTip = 'This field shows you how many Units the building has.';
+            Caption = 'Units';
             FieldClass = FlowField;
+            CalcFormula = count("Unit" where("Object No." = field("No.")));
+            Editable = false;
         }
     }
     keys
